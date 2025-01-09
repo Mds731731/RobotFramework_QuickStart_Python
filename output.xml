@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-01-09T00:13:25.103984" rpa="false" schemaversion="5">
+<suite id="s1" name="searchGoogle" source="/Users/Guest/Documents/RobotFramework_QuickStart/searchGoogle.robot">
+<test id="s1-t1" name="search Google for text" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-09T00:13:25.451600" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>url=${APP_URL}</arg>
+<arg>browser=${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-09T00:13:25.451273" elapsed="4.299647"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-09T00:13:29.752621" level="INFO">Clicking button 'id:W0wltc'.</msg>
+<arg>locator=id:W0wltc</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-09T00:13:29.751951" elapsed="0.132699"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-09T00:13:29.885249" level="INFO">Typing text 'find resturants near me' into text field 'id:APjFqb'.</msg>
+<arg>locator=id:APjFqb</arg>
+<arg>text=${Search_Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-09T00:13:29.884913" elapsed="0.283729"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-09T00:13:30.169310" level="INFO">Clicking button 'name:btnK'.</msg>
+<arg>locator=name:btnK</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-09T00:13:30.169042" elapsed="2.136781"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-09T00:13:32.713461" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-09T00:13:32.307019" elapsed="0.406572"/>
+</kw>
+<status status="PASS" start="2025-01-09T00:13:25.450242" elapsed="7.263613"/>
+</test>
+<status status="PASS" start="2025-01-09T00:13:25.106036" elapsed="7.608462"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="searchGoogle">searchGoogle</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
